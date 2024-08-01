@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+
+}
+#nav-one{
+    font-size: 27px;
+    color: green;
+    margin-left: 100px;
+}
+.mr-sm-2{
+    width: 285px !important;
+    margin-left: 68px !important;
+}
+.mr-sm-2:hover{
+    border-color: #f8f9fa !important;
+}
+.navbar-light{
+    background-color: #2874f0 !important ;
+}
+.my-sm-0{
+    
+}
+.mr-sm-2:hover{
+    border-color: none !important;
+}
+.my-sm-0:hover{
+    background-color: #2874f0 !important;
+    color: black !important;
+}
+.num1{
+    cursor: pointer;
+
+}
+.dropdown-toggle{
+    background-color: #f8f9fa !important;
+    color: black !important;
+    border: none !important;
+    margin-bottom:17px !important;
+
+}
+.dropdown-item:hover{
+    background-color:#f8f9fa !important;
+    color: black !important;
+}
+
+
+.card{
+    position: absolute !important;
+  }
+.card1{
+    margin-left: 380px;
+    margin-top: 85px !important;
+}
+
+.card2{
+    margin-left:  690px !important ;
+    margin-top: 85px !important;
+}
+.rs{
+    margin-left: 20px;
+}
+.per{
+ color: green;
+ margin-left: 10px;
+}
+.btn-sm{
+    height: 43px !important;
+    width: 121px !important;
+    align-content: center;
+    background-color: #fb641b !important;
+}
+.btn-sm1{
+    height: 43px !important;
+    width: 121px !important;
+    align-content: center;
+    background-color: #ff9f00 !important;
+}
+
+/*--------------====index.html========...................*/
+
+
+.card-1{
+    margin-left: 400px;
+    width: 500px !important;
+}
+.photo{
+    margin-left: 41px;
+}
+.but2{
+    margin-left: 120px !important;
+}
+.pic{
+    width: 50%  !important;
+    margin-left: 127px;
+}
+.card{
+    align-content: center;
+}
+.sm-1{
+    margin-left: 101px;
+    font-size: 14px !important;
+
+}
+
+#item{
+    margin-left: 156px;
+}
+
+.btn{
+    margin-top: 20px !important;
+}
+.labell{
+    margin-top: 46px;
+}
+#one{
+    margin-left: 201px;
+}
+#two{
+    margin-left: 170px;
+}
+
+/*----------------------summary.html-----------------*/
+
+.card{
+    margin-left: 340px;
+}
+h2{
+    margin-left: 340px;
+}
+.item-1{
+    margin-left;
+}
+.order{
+    background-color: #fb641b;
+    color: white;
+    border-color: grey;
+    height: 46px;
+    width: 127px;
+    border-radius: 5px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="card card-1" style="width: 18rem;">
+        <img src="images/images2.jpg" class="card-img-top pic" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Diesel Mens Mega Chief - DZ4465 Analog Watch</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="photo">
+            <input type="file" accept="image/*" onchange="loadFile(event)">
+             <img id="output" height="100px" width="100px">
+        </div>
+        <div>
+           <div class="labell">
+              <div><span id="one">Items=</span> <label id="count">  1</label></div>
+               <div><label id="item"> 1 Item Price= 7599RS</label></div>
+                <div><span id="two">Total Price=</span><label id="total" >  7599RS </label> </div>
+            </div>
+                <input type="button" value="-" class="but2" onclick="decrement()"/>
+                <input type="text" value="1"  id="cart" disabled/>
+                <input type="button" value="+" class="but" onclick="increment()"/>
+            </div>
+            <div class="card-body">
+                <a href="finally.html" type="button" class="btn btn-primary btn-sm1 sm-1">GO TO ORDER</a>
+                <a href="index.html" type="button" class="btn btn-secondary btn-sm">BACK TO CART</a>
+            </div>
+          </div>
+          <script>
+             var loadFile = function(event) {
+            var reader = new FileReader();
+            reader.onload = function(){
+                var output = document.getElementById('output');
+                output.src = reader.result;
+                localStorage.setItem('imageSrc', reader.result);
+            };
+            reader.readAsDataURL(event.target.files[0]);
+        };
+          function increment(){
+                var count = document.getElementById('count').value;
+                var total = document.getElementById('total').value;
+    
+                var cartvalue = document.getElementById('cart').value;
+                document.getElementById('cart').value = parseInt(cartvalue)+1;
+                document.getElementById('count').textContent = parseInt(cartvalue)+1;
+                document.getElementById('total').textContent = document.getElementById('cart').value*7599 +"RS";
+                saveData();
+            }
+            function decrement(){
+                var cartvalue = document.getElementById('count').value;
+                var cartvalue = document.getElementById('total').value;
+    
+                var cartvalue = document.getElementById('cart').value;
+                document.getElementById('cart').value = parseInt(cartvalue)-1;
+                document.getElementById('count').textContent = parseInt(cartvalue)-1;
+                document.getElementById('total').textContent = document.getElementById('cart').value*7599 +"RS";
+                saveData();
+               
+                 }
+
+                 function saveData() {
+        var cartValue = document.getElementById('cart').value;
+        var total = document.getElementById('total').textContent;
+        localStorage.setItem('cartValue', cartValue);
+        localStorage.setItem('totalPrice', total);
+    }  
+    
+            
+        
+            
+        
+       
+</script>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"> </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+
+ <!-----localStorage.setItem('cartValue', cartValue);
+localStorage.setItem('total', total);
+localStorage.setItem('outputSrc', outputSrc);----->
