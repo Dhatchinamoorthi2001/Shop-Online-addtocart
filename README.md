@@ -45,7 +45,7 @@ Welcome to Shop-Online, your one-stop destination for an amazing online shopping
 - **🌐 HTML** - Structure of the web pages.
 - **🎨 CSS** - Styling and layout.
 - **💻 JavaScript** - Functionality and interactivity.
-- **⚛️ React** - Building dynamic user interfaces.
+  
 
 
 Happy Shopping! 🛍️✨
